@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FCC84BD1-4E63-4859-8170-72E35F91A0BC}</ProjectGuid>
+    <ProjectGuid>{3EE73125-2C2A-40DE-8430-08EF0B9D5D7E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>projectYahtzee.My.MyApplication</StartupObject>
     <RootNamespace>projectYahtzee</RootNamespace>
