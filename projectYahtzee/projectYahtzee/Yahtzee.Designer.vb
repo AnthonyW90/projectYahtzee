@@ -23,6 +23,7 @@ Partial Class frmYahtzee
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.btnRoll = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnExit
@@ -34,11 +35,20 @@ Partial Class frmYahtzee
         Me.btnExit.Text = "E&xit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'btnRoll
+        '
+        Me.btnRoll.Location = New System.Drawing.Point(178, 247)
+        Me.btnRoll.Name = "btnRoll"
+        Me.btnRoll.Size = New System.Drawing.Size(75, 23)
+        Me.btnRoll.TabIndex = 1
+        Me.btnRoll.Text = "Roll"
+        Me.btnRoll.UseVisualStyleBackColor = True
+        '
         'frmYahtzee
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.ClientSize = New System.Drawing.Size(624, 441)
+        Me.Controls.Add(Me.btnRoll)
         Me.Controls.Add(Me.btnExit)
         Me.Name = "frmYahtzee"
         Me.Text = "Yahtzee Project"
@@ -47,4 +57,5 @@ Partial Class frmYahtzee
     End Sub
 
     Friend WithEvents btnExit As Button
+    Friend WithEvents btnRoll As Button
 End Class

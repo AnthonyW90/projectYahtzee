@@ -1,3 +1,13 @@
 S:\My Documents\Visual Studio 2015\Projects\projectYahtzee\projectYahtzee\bin\Debug\projectYahtzee.exe.config
 \\zeus\profile$\955334251\My Documents\Visual Studio 2015\Projects\projectYahtzee\projectYahtzee\bin\Debug\projectYahtzee.exe.config
 C:\Users\Albert\Documents\GitHub\projectYahtzee\projectYahtzee\projectYahtzee\bin\Debug\projectYahtzee.exe.config
+C:\Users\Albert\Documents\GitHub\projectYahtzee\projectYahtzee\projectYahtzee\bin\Debug\projectYahtzee.exe
+C:\Users\Albert\Documents\GitHub\projectYahtzee\projectYahtzee\projectYahtzee\bin\Debug\projectYahtzee.pdb
+C:\Users\Albert\Documents\GitHub\projectYahtzee\projectYahtzee\projectYahtzee\bin\Debug\projectYahtzee.xml
+C:\Users\Albert\Documents\GitHub\projectYahtzee\projectYahtzee\projectYahtzee\obj\Debug\projectYahtzee.vbprojResolveAssemblyReference.cache
+C:\Users\Albert\Documents\GitHub\projectYahtzee\projectYahtzee\projectYahtzee\obj\Debug\projectYahtzee.Resources.resources
+C:\Users\Albert\Documents\GitHub\projectYahtzee\projectYahtzee\projectYahtzee\obj\Debug\projectYahtzee.frmYahtzee.resources
+C:\Users\Albert\Documents\GitHub\projectYahtzee\projectYahtzee\projectYahtzee\obj\Debug\projectYahtzee.vbproj.GenerateResource.Cache
+C:\Users\Albert\Documents\GitHub\projectYahtzee\projectYahtzee\projectYahtzee\obj\Debug\projectYahtzee.exe
+C:\Users\Albert\Documents\GitHub\projectYahtzee\projectYahtzee\projectYahtzee\obj\Debug\projectYahtzee.xml
+C:\Users\Albert\Documents\GitHub\projectYahtzee\projectYahtzee\projectYahtzee\obj\Debug\projectYahtzee.pdb

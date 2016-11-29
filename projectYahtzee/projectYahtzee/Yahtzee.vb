@@ -17,6 +17,8 @@ Option Explicit On
 Option Strict On
 
 Public Class frmYahtzee
+    Dim cintDie(4) As Integer
+
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
 
         '--------------------------------------
@@ -24,5 +26,13 @@ Public Class frmYahtzee
         '--------------------------------------
 
         Me.Close()
+    End Sub
+
+    Private Sub btnRoll_Click(sender As Object, e As EventArgs) Handles btnRoll.Click
+        Dim intDieIndex As Integer
+
+        For intDieIndex = 0 To 4
+            cintDie(intDieIndex) = CInt(Rnd() * 6) + 1
+        Next intDieIndex
     End Sub
 End Class
