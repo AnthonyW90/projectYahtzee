@@ -19,6 +19,7 @@ Option Strict On
 Public Class frmYahtzee
     Dim cintDie(4) As Integer
     Dim cintPlayerCount As Integer
+    Dim cblnDieSaved(4) As Boolean
 
     Private Sub frmYahtzeeStartLoad_Load(sender As Object, e As EventArgs) Handles Me.Load
 
@@ -184,14 +185,84 @@ Public Class frmYahtzee
         Randomize()
 
         For intDieIndex = 0 To 4
-            cintDie(intDieIndex) = CInt(Int(Rnd() * 6) + 1)
-            strDieFileName(intDieIndex) = "..\Images\DIE" & CStr(cintDie(intDieIndex)) & ".PNG"
+            If cblnDieSaved(intDieIndex) = False Then
+                cintDie(intDieIndex) = CInt(Int(Rnd() * 6) + 1)
+                strDieFileName(intDieIndex) = "..\Images\DIE" & CStr(cintDie(intDieIndex)) & ".PNG"
+            End If
         Next intDieIndex
 
-        picDie1.BackgroundImage = Image.FromFile(strDieFileName(0))
-        picDie2.BackgroundImage = Image.FromFile(strDieFileName(1))
-        picDie3.BackgroundImage = Image.FromFile(strDieFileName(2))
-        picDie4.BackgroundImage = Image.FromFile(strDieFileName(3))
-        picDie5.BackgroundImage = Image.FromFile(strDieFileName(4))
+        If cblnDieSaved(0) = False Then
+            picDie1.BackgroundImage = Image.FromFile(strDieFileName(0))
+        End If
+        If cblnDieSaved(1) = False Then
+            picDie2.BackgroundImage = Image.FromFile(strDieFileName(1))
+        End If
+        If cblnDieSaved(2) = False Then
+            picDie3.BackgroundImage = Image.FromFile(strDieFileName(2))
+        End If
+        If cblnDieSaved(3) = False Then
+            picDie4.BackgroundImage = Image.FromFile(strDieFileName(3))
+        End If
+        If cblnDieSaved(4) = False Then
+            picDie5.BackgroundImage = Image.FromFile(strDieFileName(4))
+        End If
+    End Sub
+
+    Private Sub ToggleDieSave(ByVal intDieIndex As Integer)
+        If cblnDieSaved(intDieIndex) = True Then
+            cblnDieSaved(intDieIndex) = False
+        Else
+            cblnDieSaved(intDieIndex) = True
+        End If
+    End Sub
+
+    Private Sub picDie1_Click(sender As Object, e As EventArgs) Handles picDie1.Click
+        ToggleDieSave(0)
+
+        If cblnDieSaved(0) = True Then
+            picDie1.Top = 304
+        Else
+            picDie1.Top = 216
+        End If
+    End Sub
+
+    Private Sub picDie2_Click(sender As Object, e As EventArgs) Handles picDie2.Click
+        ToggleDieSave(1)
+
+        If cblnDieSaved(1) = True Then
+            picDie2.Top = 304
+        Else
+            picDie2.Top = 216
+        End If
+    End Sub
+
+    Private Sub picDie3_Click(sender As Object, e As EventArgs) Handles picDie3.Click
+        ToggleDieSave(2)
+
+        If cblnDieSaved(2) = True Then
+            picDie3.Top = 304
+        Else
+            picDie3.Top = 216
+        End If
+    End Sub
+
+    Private Sub picDie4_Click(sender As Object, e As EventArgs) Handles picDie4.Click
+        ToggleDieSave(3)
+
+        If cblnDieSaved(3) = True Then
+            picDie4.Top = 304
+        Else
+            picDie4.Top = 216
+        End If
+    End Sub
+
+    Private Sub picDie5_Click(sender As Object, e As EventArgs) Handles picDie5.Click
+        ToggleDieSave(4)
+
+        If cblnDieSaved(4) = True Then
+            picDie5.Top = 304
+        Else
+            picDie5.Top = 216
+        End If
     End Sub
 End Class
