@@ -41,19 +41,19 @@ Partial Class frmYahtzee
         Me.btnRoll = New System.Windows.Forms.Button()
         Me.pnlControl = New System.Windows.Forms.Panel()
         Me.pnlField = New System.Windows.Forms.Panel()
+        Me.picDie4 = New System.Windows.Forms.PictureBox()
+        Me.picDie3 = New System.Windows.Forms.PictureBox()
         Me.picDie2 = New System.Windows.Forms.PictureBox()
         Me.picDie1 = New System.Windows.Forms.PictureBox()
-        Me.picDie3 = New System.Windows.Forms.PictureBox()
         Me.picDie5 = New System.Windows.Forms.PictureBox()
-        Me.picDie4 = New System.Windows.Forms.PictureBox()
         Me.pnlStartLoad.SuspendLayout()
         Me.pnlChoosePlayers.SuspendLayout()
         Me.pnlField.SuspendLayout()
+        CType(Me.picDie4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picDie3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picDie3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picDie4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlStartLoad
@@ -253,6 +253,22 @@ Partial Class frmYahtzee
         Me.pnlField.Size = New System.Drawing.Size(415, 365)
         Me.pnlField.TabIndex = 8
         '
+        'picDie4
+        '
+        Me.picDie4.Location = New System.Drawing.Point(244, 216)
+        Me.picDie4.Name = "picDie4"
+        Me.picDie4.Size = New System.Drawing.Size(54, 53)
+        Me.picDie4.TabIndex = 5
+        Me.picDie4.TabStop = False
+        '
+        'picDie3
+        '
+        Me.picDie3.Location = New System.Drawing.Point(184, 216)
+        Me.picDie3.Name = "picDie3"
+        Me.picDie3.Size = New System.Drawing.Size(54, 53)
+        Me.picDie3.TabIndex = 4
+        Me.picDie3.TabStop = False
+        '
         'picDie2
         '
         Me.picDie2.Location = New System.Drawing.Point(124, 216)
@@ -269,14 +285,6 @@ Partial Class frmYahtzee
         Me.picDie1.TabIndex = 2
         Me.picDie1.TabStop = False
         '
-        'picDie3
-        '
-        Me.picDie3.Location = New System.Drawing.Point(184, 304)
-        Me.picDie3.Name = "picDie3"
-        Me.picDie3.Size = New System.Drawing.Size(54, 53)
-        Me.picDie3.TabIndex = 4
-        Me.picDie3.TabStop = False
-        '
         'picDie5
         '
         Me.picDie5.Location = New System.Drawing.Point(304, 216)
@@ -284,14 +292,6 @@ Partial Class frmYahtzee
         Me.picDie5.Size = New System.Drawing.Size(54, 53)
         Me.picDie5.TabIndex = 6
         Me.picDie5.TabStop = False
-        '
-        'picDie4
-        '
-        Me.picDie4.Location = New System.Drawing.Point(244, 216)
-        Me.picDie4.Name = "picDie4"
-        Me.picDie4.Size = New System.Drawing.Size(54, 53)
-        Me.picDie4.TabIndex = 5
-        Me.picDie4.TabStop = False
         '
         'frmYahtzee
         '
@@ -306,11 +306,11 @@ Partial Class frmYahtzee
         Me.pnlChoosePlayers.ResumeLayout(False)
         Me.pnlChoosePlayers.PerformLayout()
         Me.pnlField.ResumeLayout(False)
+        CType(Me.picDie4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picDie3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picDie3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picDie5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picDie4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
