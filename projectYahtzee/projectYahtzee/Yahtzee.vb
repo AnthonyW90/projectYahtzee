@@ -180,9 +180,18 @@ Public Class frmYahtzee
 
     Private Sub btnRoll_Click(sender As Object, e As EventArgs) Handles btnRoll.Click
         Dim intDieIndex As Integer
+        Dim strDieFileName(4) As String
+        Randomize()
 
         For intDieIndex = 0 To 4
-            cintDie(intDieIndex) = CInt(Rnd() * 6) + 1
+            cintDie(intDieIndex) = CInt(Int(Rnd() * 6) + 1)
+            strDieFileName(intDieIndex) = "..\Images\DIE" & CStr(cintDie(intDieIndex)) & ".PNG"
         Next intDieIndex
+
+        picDie1.BackgroundImage = Image.FromFile(strDieFileName(0))
+        picDie2.BackgroundImage = Image.FromFile(strDieFileName(1))
+        picDie3.BackgroundImage = Image.FromFile(strDieFileName(2))
+        picDie4.BackgroundImage = Image.FromFile(strDieFileName(3))
+        picDie5.BackgroundImage = Image.FromFile(strDieFileName(4))
     End Sub
 End Class

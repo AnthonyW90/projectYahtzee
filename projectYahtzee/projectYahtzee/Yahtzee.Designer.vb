@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmYahtzee
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmYahtzee
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.pnlStartLoad = New System.Windows.Forms.Panel()
         Me.lblHighScore = New System.Windows.Forms.Label()
@@ -39,8 +39,18 @@ Partial Class frmYahtzee
         Me.btnNewGame = New System.Windows.Forms.Button()
         Me.btnLoad = New System.Windows.Forms.Button()
         Me.btnRoll = New System.Windows.Forms.Button()
+        Me.picDie1 = New System.Windows.Forms.PictureBox()
+        Me.picDie2 = New System.Windows.Forms.PictureBox()
+        Me.picDie3 = New System.Windows.Forms.PictureBox()
+        Me.picDie4 = New System.Windows.Forms.PictureBox()
+        Me.picDie5 = New System.Windows.Forms.PictureBox()
         Me.pnlStartLoad.SuspendLayout()
         Me.pnlChoosePlayers.SuspendLayout()
+        CType(Me.picDie1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picDie2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picDie3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picDie4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picDie5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlStartLoad
@@ -51,7 +61,7 @@ Partial Class frmYahtzee
         Me.pnlStartLoad.Controls.Add(Me.btnExit)
         Me.pnlStartLoad.Controls.Add(Me.btnNewGame)
         Me.pnlStartLoad.Controls.Add(Me.btnLoad)
-        Me.pnlStartLoad.Location = New System.Drawing.Point(13, 13)
+        Me.pnlStartLoad.Location = New System.Drawing.Point(561, 366)
         Me.pnlStartLoad.Name = "pnlStartLoad"
         Me.pnlStartLoad.Size = New System.Drawing.Size(599, 417)
         Me.pnlStartLoad.TabIndex = 0
@@ -213,17 +223,62 @@ Partial Class frmYahtzee
         '
         'btnRoll
         '
-        Me.btnRoll.Location = New System.Drawing.Point(549, 416)
+        Me.btnRoll.Location = New System.Drawing.Point(12, 307)
         Me.btnRoll.Name = "btnRoll"
         Me.btnRoll.Size = New System.Drawing.Size(75, 23)
         Me.btnRoll.TabIndex = 1
         Me.btnRoll.Text = "Roll"
         Me.btnRoll.UseVisualStyleBackColor = True
         '
+        'picDie1
+        '
+        Me.picDie1.Location = New System.Drawing.Point(12, 12)
+        Me.picDie1.Name = "picDie1"
+        Me.picDie1.Size = New System.Drawing.Size(54, 53)
+        Me.picDie1.TabIndex = 2
+        Me.picDie1.TabStop = False
+        '
+        'picDie2
+        '
+        Me.picDie2.Location = New System.Drawing.Point(12, 71)
+        Me.picDie2.Name = "picDie2"
+        Me.picDie2.Size = New System.Drawing.Size(54, 53)
+        Me.picDie2.TabIndex = 3
+        Me.picDie2.TabStop = False
+        '
+        'picDie3
+        '
+        Me.picDie3.Location = New System.Drawing.Point(12, 130)
+        Me.picDie3.Name = "picDie3"
+        Me.picDie3.Size = New System.Drawing.Size(54, 53)
+        Me.picDie3.TabIndex = 4
+        Me.picDie3.TabStop = False
+        '
+        'picDie4
+        '
+        Me.picDie4.Location = New System.Drawing.Point(12, 189)
+        Me.picDie4.Name = "picDie4"
+        Me.picDie4.Size = New System.Drawing.Size(54, 53)
+        Me.picDie4.TabIndex = 5
+        Me.picDie4.TabStop = False
+        '
+        'picDie5
+        '
+        Me.picDie5.Location = New System.Drawing.Point(12, 248)
+        Me.picDie5.Name = "picDie5"
+        Me.picDie5.Size = New System.Drawing.Size(54, 53)
+        Me.picDie5.TabIndex = 6
+        Me.picDie5.TabStop = False
+        '
         'frmYahtzee
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.ClientSize = New System.Drawing.Size(624, 441)
+        Me.Controls.Add(Me.picDie5)
+        Me.Controls.Add(Me.picDie4)
+        Me.Controls.Add(Me.picDie3)
+        Me.Controls.Add(Me.picDie2)
+        Me.Controls.Add(Me.picDie1)
         Me.Controls.Add(Me.btnRoll)
         Me.Controls.Add(Me.pnlStartLoad)
         Me.Name = "frmYahtzee"
@@ -231,6 +286,11 @@ Partial Class frmYahtzee
         Me.pnlStartLoad.ResumeLayout(False)
         Me.pnlChoosePlayers.ResumeLayout(False)
         Me.pnlChoosePlayers.PerformLayout()
+        CType(Me.picDie1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picDie2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picDie3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picDie4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picDie5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -252,4 +312,9 @@ Partial Class frmYahtzee
     Friend WithEvents btnConfirm As Button
     Friend WithEvents lblHighScore As Label
     Friend WithEvents btnRoll As Button
+    Friend WithEvents picDie1 As PictureBox
+    Friend WithEvents picDie2 As PictureBox
+    Friend WithEvents picDie3 As PictureBox
+    Friend WithEvents picDie4 As PictureBox
+    Friend WithEvents picDie5 As PictureBox
 End Class
